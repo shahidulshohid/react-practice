@@ -22,4 +22,16 @@ const doMath = (num1, num2) => {
     const sum = num1 + num2
     return sum
 }
-console.log(doMath(2, 6))
+// console.log(doMath(2, 6))
+
+//spread operator
+// const newNumbers = numbers
+// create a new array from an older array and add an element 
+const newNumbers = [...numbers]
+const currentNumbers = [...numbers, 77]
+numbers.push(99)
+numbers.push(99)
+numbers.push(99)
+console.log(numbers)
+console.log(newNumbers)
+console.log(currentNumbers)
