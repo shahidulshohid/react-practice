@@ -61,5 +61,5 @@ const hideUser = () => {console.log('hide user')}
 //use || if the left side is false the right side will be executed
 isActive || showUser()
 
-//
+//toggle boolean
 isActive = !isActive
