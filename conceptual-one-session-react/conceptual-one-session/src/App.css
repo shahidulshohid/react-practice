@@ -5,6 +5,15 @@
   text-align: center;
 }
 
+/* my won css here */
+.hero{
+  margin-top: 30px;
+  padding:10px
+}
+.button{
+  margin: 5px;
+  padding: 10px;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
