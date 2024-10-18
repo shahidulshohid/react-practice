@@ -1,14 +1,21 @@
 import Products from './components/products/products'
+import Services from './components/services/Services'
 import './App.css'
 import { useEffect, useState } from 'react'
 
 function App() {
   
   const [status, setStatus] = useState(false)
-  const handleStatus = () => {
-    setStatus(!status)
-  }
   console.log(status)
+  
+  const transfer = (message) => {
+    setStatus(message)
+  }
+
+  // const handleStatus = () => {
+  //   setStatus(!status)
+  // }
+  // console.log(status)
 
   // const information = {
   //   message: 'secret',
@@ -53,8 +60,12 @@ function App() {
     {/* <button onClick={()=>handleHeroAlom('Ok boss')}>Just for Hero Alom</button> */}
       {/* <Products info={information}></Products> */}
 
-      <button onClick={handleStatus}>handle Status</button>
-      <h1>Hello APp.jsx</h1>
+      {/* <button onClick={handleStatus}>handle Status</button> 
+      {
+        status ? <Products></Products> : <Services></Services>
+      } */}
+
+      <Services transfer={transfer}></Services>
     </>
   )
 }
