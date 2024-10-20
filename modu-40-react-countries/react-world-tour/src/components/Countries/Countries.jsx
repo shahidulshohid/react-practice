@@ -6,6 +6,7 @@ const Countries = () => {
 
     const [countries, setCountries] = useState([])
     const [visitedCountries, setVisitedCountries] = useState([])
+    const [visitedFlags, setVisitedFlags] = useState([])
 
   
     useEffect(() => {
@@ -18,12 +19,19 @@ const Countries = () => {
         const newVisitedCountries = [...visitedCountries, country]
         setVisitedCountries(newVisitedCountries)
     }
-    console.log(visitedCountries);
-    
 
+    const handleVisitedFlags = (flags) => {
+        const newVisitedFlags = [...visitedFlags, flags]
+        setVisitedFlags(newVisitedFlags)
+    }
+
+    // remove item from an array in a state 
+    // use filter to select all the elements except the one  you want to remove
+    
     return (
         <div>
             <h3>Countries: {countries.length}</h3>
+            {/* visited countries */}
             <div>
             <h5>Visited countries: {visitedCountries.length} </h5>
             <ul>
@@ -32,9 +40,16 @@ const Countries = () => {
                 }
             </ul>
             </div>
+            <div className='flag-container'>
+                {
+                    visitedFlags.map((flag, idx) => <img key={idx} src={flag}></img>)
+                }
+            </div>
+            {/* display countries  */}
             <div className='country-container'>
             {
-                countries.map(country => <Country key={country.cca3} country={country} handleVisitedCountry={handleVisitedCountry}></Country>)
+                countries.map(country => <Country key={country.cca3} country={country} handleVisitedCountry={handleVisitedCountry}
+                    handleVisitedFlags={handleVisitedFlags}></Country>)
             }
             </div>
         </div>
