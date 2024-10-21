@@ -1,0 +1,52 @@
+[
+  {
+    "id": "001",
+    "cover": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?fit=crop&w=500&q=80",
+    "title": "Mastering JavaScript ES6 Features",
+    "author": "John Doe",
+    "authorImg": "https://randomuser.me/api/portraits/men/1.jpg",
+    "postedDate": "2024-07-01",
+    "readingTime": 6,
+    "hasTag": ["javascript", "ES6", "programming"]
+  },
+  {
+    "id": "002",
+    "cover": "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?fit=crop&w=500&q=80",
+    "title": "Building Responsive Layouts with CSS Grid",
+    "author": "Jane Smith",
+    "authorImg": "https://randomuser.me/api/portraits/women/2.jpg",
+    "postedDate": "2024-07-15",
+    "readingTime": 8,
+    "hasTag": ["css", "grid", "responsive"]
+  },
+  {
+    "id": "003",
+    "cover": "https://images.unsplash.com/photo-1517292987719-0369a794ec0f?fit=crop&w=500&q=80",
+    "title": "Introduction to Python Asyncio",
+    "author": "Emily Johnson",
+    "authorImg": "https://randomuser.me/api/portraits/women/3.jpg",
+    "postedDate": "2024-08-05",
+    "readingTime": 7,
+    "hasTag": ["python", "asyncio", "concurrency"]
+  },
+  {
+    "id": "004",
+    "cover": "https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?fit=crop&w=500&q=80",
+    "title": "Understanding the MERN Stack",
+    "author": "Michael Brown",
+    "authorImg": "https://randomuser.me/api/portraits/men/4.jpg",
+    "postedDate": "2024-08-20",
+    "readingTime": 10,
+    "hasTag": ["mern", "fullstack", "web-development"]
+  },
+  {
+    "id": "005",
+    "cover": "https://images.unsplash.com/photo-1508873699372-7ae5aa7e7b24?fit=crop&w=500&q=80",
+    "title": "Getting Started with Kubernetes",
+    "author": "Sophia Miller",
+    "authorImg": "https://randomuser.me/api/portraits/women/5.jpg",
+    "postedDate": "2024-09-02",
+    "readingTime": 9,
+    "hasTag": ["kubernetes", "devops", "containers"]
+  }
+]
