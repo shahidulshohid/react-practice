@@ -21,7 +21,7 @@ const addToLs = id => {
 const removeFromLs = id => {
     const cart = getStoredCart()
     //removing every id
-    const remaining = cart.filter(idx => idx.id !== id)
+    const remaining = cart.filter(idx => idx !== id)
     saveCartToLs(remaining)
 }
 
