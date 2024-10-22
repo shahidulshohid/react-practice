@@ -37,11 +37,11 @@
     "authorImg": "https://randomuser.me/api/portraits/men/4.jpg",
     "postedDate": "2024-08-20",
     "readingTime": 10,
-    "hasTag": ["mern", "fullstack", "web-development"]
+    "hasTag": ["mern", "fullstack", "web_development"]
   },
   {
     "id": "005",
-    "cover": "https://images.unsplash.com/photo-1508873699372-7ae5aa7e7b24?fit=crop&w=500&q=80",
+    "cover": "https://images.unsplash.com/photo-1517433456452-f9633a875f6f?fit=crop&w=500&q=80",
     "title": "Getting Started with Kubernetes",
     "author": "Sophia Miller",
     "authorImg": "https://randomuser.me/api/portraits/women/5.jpg",
