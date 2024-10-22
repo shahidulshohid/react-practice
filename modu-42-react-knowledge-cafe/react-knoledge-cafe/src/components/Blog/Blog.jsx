@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { HiBookmarkSquare } from "react-icons/hi2";
 
 const Blog = ({blog, handleAddToBookmar, handleMarkAsRead}) => {
-    const {title, cover, author, authorImg, readingTime, postedDate, hasTag} = blog
+    const {id, title, cover, author, authorImg, readingTime, postedDate, hasTag} = blog
     return (
         <div className='mb-20 space-y-4'>
             <img className='w-full mb-8' src={cover} alt={`cover picture of the title ${title}`} />
@@ -26,7 +26,7 @@ const Blog = ({blog, handleAddToBookmar, handleMarkAsRead}) => {
                     hasTag.map((has, idx) => <span className='mr-2' key={idx}> #{has}</span>)
                 }
             </p>
-            <button className='text-purple-600 underline font-bold' onClick={()=>handleMarkAsRead(readingTime)}>Mark As Read</button>
+            <button className='text-purple-600 underline font-bold' onClick={()=>handleMarkAsRead(id,readingTime)}>Mark As Read</button>
         </div>
     );
 };
